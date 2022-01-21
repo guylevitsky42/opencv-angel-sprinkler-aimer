@@ -13,5 +13,9 @@ while True:
 
     # Displays the frame on screen - waitKey is for macos.
     cv2.imshow('frame', frame)
-    cv2.waitKey(1)
+    # cv2.waitKey(1)
+    if cv2.waitKey(20) & 0xFF == ord('q'):
+        break
 
+cap.release()
+cv2.destroyAllWindows()
