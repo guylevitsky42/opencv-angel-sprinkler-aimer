@@ -11,9 +11,8 @@ while True:
     # captures a single frame
     ret, frame = cap.read()
 
-    # Displays the frame on screen - waitKey is for macos.
+    # Displays the frame on screen
     cv2.imshow('frame', frame)
-    # cv2.waitKey(1)
     if cv2.waitKey(20) & 0xFF == ord('q'):
         break
 
